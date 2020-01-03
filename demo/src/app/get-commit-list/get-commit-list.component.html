@@ -15,7 +15,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let objCommit of commitList;let i=index">
-          <td  >{{i}}</td>
+          <td  >{{(i + 1)}}</td>
           <td>{{objCommit.commit.committer.name}}</td>
           <td>{{objCommit.commit.message}}</td>
           <td>{{objCommit.commit.committer.date | date:'medium'}}</td>
